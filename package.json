@@ -1,0 +1,20 @@
+{
+  "name": "micamens",
+  "version": "1.0.0",
+  "description": "Road to a meaningful life",
+  "main": "micamens.js",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.5",
+    "express": "^4.19.2",
+    "express-session": "^1.17.2",
+    "mongoose": "^5.9.26"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vinod Nair",
+  "license": "ISC"
+}
