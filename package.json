@@ -1,8 +1,8 @@
 {
-  "name": "micamens",
+  "name": "mmicamens",
   "version": "1.0.0",
   "description": "Road to a meaningful life",
-  "main": "micamens.js",
+  "main": "mmicamens.js",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "body-parser": "^1.19.0",

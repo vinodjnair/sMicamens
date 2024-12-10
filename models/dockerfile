@@ -1,0 +1,11 @@
+# Use the official MongoDB image from Docker Hub
+FROM mongo:4.2
+
+# Set up a directory for MongoDB data
+VOLUME ["/data/db"]
+
+# Expose the default MongoDB port
+EXPOSE 27017
+
+# Run the MongoDB server
+CMD ["mongod"]

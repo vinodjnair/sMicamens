@@ -5,7 +5,7 @@ let mongoose = require("mongoose"),
 const {enrichSpace, dbConnect}  = require("./space");
 
 if (dbConnect) {
-  mongoose.connect("mongodb://0.0.0.0:27017/micamens")
+  mongoose.connect("mongodb://localhost:27017/micamens")
   .then(() => {
     console.log("Activity model connected in the new server")
   })
