@@ -1,13 +1,13 @@
 var mongoose = require("mongoose");
 let dbConnect = false;
-mongoose.connect("mongodb://localhost:27017/micamens")
+/* mongoose.connect("mongodb://localhost:27017/micamens")
 .then(() => {
   console.log("Activity model connected")
   dbConnect = true;
 })
 .catch(err => {
   console.log("Activity model connection error: " + err)
-});
+}); */
 
 let sSpace = new mongoose.Schema(
   {

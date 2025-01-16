@@ -2,14 +2,22 @@ const mongoose = require("mongoose"),
   express = require("express"),
   router = express.Router();
 
-mongoose.connect("mongodb://localhost:27017/micamens")
+mongoose.connect("mongodb://127.0.0.1:27017/micamens")
 .then(() => {
   console.log("Auth model connected")
 })
 .catch(err => {
   console.log("Auth model connection error: " + err)
-
 });
+
+/* mongoose.connect('mongodb://127.0.0.1:27017/micamens', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  serverSelectionTimeoutMS: 30000, // Extend timeout
+})
+  .then(() => console.log('Connected to MongoDB'))
+  .catch(err => console.error('MongoDB connection error:', err)); */
+
 
 const sCred = new mongoose.Schema(
   {
