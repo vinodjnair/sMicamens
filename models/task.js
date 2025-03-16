@@ -6,13 +6,13 @@ const {updateActivity}  = require("./activity");
 const {updateSpace}  = require("./space");
 
 
-/* mongoose.connect("mongodb://localhost:27017/micamens")
+mongoose.connect("mongodb://localhost:27017/micamens")
   .then(() => {
     console.log("Task model connected in the new server")
   })
   .catch(err => {
     console.log("Task model connection error: " + err)
-  }); */
+  });
 
 let sTask = new mongoose.Schema(
   {

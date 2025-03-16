@@ -4,7 +4,7 @@ let mongoose = require("mongoose"),
 
 const {enrichSpace, dbConnect}  = require("./space");
 
-/* if (dbConnect) {
+if (dbConnect) {
   mongoose.connect("mongodb://127.0.0.1:27017/micamens")
   .then(() => {
     console.log("Activity model connected in the new server")
@@ -12,7 +12,7 @@ const {enrichSpace, dbConnect}  = require("./space");
   .catch(err => {
     console.log("Activity model connection error: " + err)
   });
-} */
+}
 
 let sActivity = new mongoose.Schema(
   {

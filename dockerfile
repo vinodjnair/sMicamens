@@ -20,4 +20,4 @@ VOLUME /app/node_modules
 EXPOSE 3001
 
 # Command to run the application
-CMD ["node", "micamens.js"]
+CMD ["node", "smicamens.js"]
