@@ -6,7 +6,8 @@ const {updateActivity}  = require("./activity");
 const {updateSpace}  = require("./space");
 
 
-mongoose.connect("mongodb://localhost:27017/micamens")
+//mongoose.connect("mongodb://localhost:27017/micamens")
+mongoose.connect("mongodb://127.0.0.1:27017/micamens")
   .then(() => {
     console.log("Task model connected in the new server")
   })
